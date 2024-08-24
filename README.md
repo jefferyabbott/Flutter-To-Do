@@ -19,9 +19,10 @@ However, there doesn't appear to be any such function named hashValues.
 
 *Yes, I will do further exploration and open a PR if I figure out that puzzle.*
 
-![ToDo1](https://www.dropbox.com/scl/fi/bzpy6i9vju0gh9qymwrke/todo1.png?rlkey=k72yelnkl2hxl8y79jt4ic9p4&st=2kve4qy5&raw=1)
+![ToDo1](https://www.dropbox.com/scl/fi/dv7garleyczjfmpvad6yn/todo1.png?rlkey=e9cxeuvqgebp3r7q8eaqfgb7x&st=53jmfxyh&raw=1)
 
+![ToDo2](https://www.dropbox.com/scl/fi/3eselztf33dchvu2lce7c/todo2.png?rlkey=jmphpi1ieyiqac9f6h189npqr&st=ka0llhtr&raw=1)
 
-![ToDo3](https://www.dropbox.com/scl/fi/89gosxfpylldxjz6unr6x/todo3.png?rlkey=nbhfazfv3huk19j71i418zzj9&st=kp46p1ds&raw=1)
+![ToDo3](https://www.dropbox.com/scl/fi/4ycn5mcojkoqnbr7doj0u/todo3.png?rlkey=rw9smg82oif1vw6kw0ortinrz&st=gnl5zwf5&raw=1)
 
-![ToDo3](https://www.dropbox.com/scl/fi/ukzfthuhdy8kobebnag2p/todo4.png?rlkey=t7aj1a7kbsh9lj190tnada251&st=el45cjq4&raw=1)
+![ToDo3](https://www.dropbox.com/scl/fi/7as8qjo35urntq9udrgsj/todo4.png?rlkey=blqbokqicpo6p8ehrq6iaak1y&st=hm08nn46&raw=1)
