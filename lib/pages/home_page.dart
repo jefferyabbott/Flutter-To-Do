@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
   final _controller = TextEditingController();
   ToDoDatabase db = ToDoDatabase();
   final _box = Hive.box('todoBox');
+  var _isEnteringToDoItem = false;
 
   @override
   void initState() {
@@ -36,6 +37,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _createNewTask() {
+    setState(() {
+      _isEnteringToDoItem = true;
+    });
     showDialog(
       context: context,
       builder: (context) {
@@ -45,6 +49,9 @@ class _HomePageState extends State<HomePage> {
           onCancel: () {
             Navigator.of(context).pop();
             _controller.clear();
+            setState(() {
+              _isEnteringToDoItem = false;
+            });
           },
         );
       },
@@ -58,6 +65,9 @@ class _HomePageState extends State<HomePage> {
     });
     Navigator.of(context).pop();
     db.updateDatabase();
+    setState(() {
+      _isEnteringToDoItem = false;
+    });
   }
 
   void deleteTask(int index) {
@@ -80,10 +90,12 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _createNewTask,
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: _isEnteringToDoItem
+          ? null
+          : FloatingActionButton(
+              onPressed: _createNewTask,
+              child: const Icon(Icons.add),
+            ),
       body: ListView.builder(
         itemCount: db.toDoList.length,
         itemBuilder: (context, index) {
